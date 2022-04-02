@@ -96,8 +96,18 @@
                     <div class="about-info">
                       <p><span class="title-s">Name: </span> <span>Muhammad Affan Iskandarsyah</span></p>
                       <p style="text-align:justify;"><span class="title-s">Address: </span> <span>Villa Mutiara Cikarang Blok H9 No. 58 RT.025/RW.011, Kec. Cikarang Selatan Kab. Bekasi</span></p>
-                      <p><span class="title-s">Email: </span> <span>affan.iskandarsyah@gmail.com</span></p>
-                      <p><span class="title-s">Phone: </span> <span> 0822-9905-8351</span></p>
+                      <p><span class="title-s">Marriage: </span> <span>Single</span></p>
+                      <p><span class="title-s">Date of Birth: </span> <span>April 4<sup>th</sup> 1999</span></p>
+                      <?php
+                        $dateOfBirth = "04-04-1999";
+                        $today = date("Y-m-d");
+                        $diff = date_diff(date_create($dateOfBirth), date_create($today));
+                        $age = $diff->format('%y');
+                      ?>
+                      <p><span class="title-s">Age:</span> <span><?php echo $age;?></span></p>
+                      <p><span class="title-s">Place of Birth: </span> <span>Bekasi</span></p>
+                      <p><span class="title-s">Religion: </span> <span>Islam</span></p>
+                      <p><span class="title-s">Citizenship: </span> <span>Indonesia</span></p>
                     </div>
                   </div>
                 </div>
