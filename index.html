@@ -98,7 +98,25 @@
                       <p style="text-align:justify;"><span class="title-s">Address: </span> <span>Villa Mutiara Cikarang Blok H9 No. 58 RT.025/RW.011, Kec. Cikarang Selatan Kab. Bekasi</span></p>
                       <p><span class="title-s">Marriage: </span> <span>Single</span></p>
                       <p><span class="title-s">Date of Birth: </span> <span>April 4<sup>th</sup> 1999</span></p>
-                      <p><span class="title-s">Age:</span> <span>22</span></p>
+                      <p><span class="title-s">Age:</span> <span>
+                        <script>  
+                          var dob = new Date("04/04/1999");  
+                          //calculate month difference from current date in time  
+                          var month_diff = Date.now() - dob.getTime();  
+                            
+                          //convert the calculated difference in date format  
+                          var age_dt = new Date(month_diff);   
+                            
+                          //extract year from date      
+                          var year = age_dt.getUTCFullYear();  
+                            
+                          //now calculate the age of the user  
+                          var age = Math.abs(year - 1970);  
+                            
+                          //display the calculated age  
+                          document.write(age);  
+                      </script>  
+                      </span></p>
                       <p><span class="title-s">Place of Birth: </span> <span>Bekasi</span></p>
                       <p><span class="title-s">Religion: </span> <span>Islam</span></p>
                       <p><span class="title-s">Citizenship: </span> <span>Indonesia</span></p>
