@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>MAILIFE</title>
+  <title>Muhammad Affan Iskandarsyah | Fullstack Engineer & Tech Lead</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="WEB DEVELOPER" name="keywords">
-  <meta content="My name is Affan, I'm a Web Developer, 4 year experience as Programmer and IT Support. Love to learn and sharing each other with fun. Lets Know Me!" name="description">
+  <meta
+    content="Fullstack Engineer, System Analyst, Tech Lead, Laravel, VueJS, Golang, Muhammad Affan Iskandarsyah, Web Developer Indonesia"
+    name="keywords">
+  <meta
+    content="Muhammad Affan Iskandarsyah is a professional Fullstack Engineer & Tech Lead with 4+ years of experience in building scalable web systems and enterprise healthcare solutions."
+    name="description">
+
+  <!-- Open Graph / SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muhammad Affan Iskandarsyah | Fullstack Engineer & Tech Lead">
+  <meta property="og:description"
+    content="Professional Fullstack Engineer with 4+ years of experience in building scalable web systems.">
+  <meta property="og:url" content="https://mailife.github.io/">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Affan Iskandarsyah",
+    "jobTitle": "Fullstack Engineer & Tech Lead",
+    "url": "https://mailife.github.io/",
+    "sameAs": [
+      "https://linkedin.com/in/muhammadaffaniskandarsyah/",
+      "https://github.com/affanisk99"
+    ],
+    "knowsAbout": ["Fullstack Development", "System Analysis", "Laravel", "VueJS", "Golang", "Healthcare Systems"],
+    "description": "Fullstack Engineer with 4+ years of experience in building and maintaining web-based systems."
+  }
+  </script>
 
   <!-- Favicons -->
-  <link href="img/icon.png" rel="icon">
-  <link href="img/icon.png" rel="apple-touch-icon">
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,32 +52,338 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style-old-green.css" rel="stylesheet">
+
+  <style>
+    /* Professional Hero Design */
+    .intro {
+      background: linear-gradient(135deg, #002a25 0%, #005248 50%, #002a25 100%) !important;
+      position: relative;
+    }
+
+    .intro-title {
+      font-weight: 700 !important;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      color: #ffffff;
+      text-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .intro-subtitle {
+      font-weight: 300 !important;
+      letter-spacing: 5px;
+      color: #d1fff0 !important;
+      text-transform: uppercase;
+      font-size: 1.1rem !important;
+      margin-top: 10px;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .intro-contact {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+
+    .name-highlight {
+      color: #1effcc;
+      font-weight: 800;
+      text-shadow: 0 0 20px rgba(30, 255, 204, 0.4);
+    }
+
+    /* Branding & Identity */
+    .navbar-brand img {
+      max-height: 40px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .intro-watermark {
+      position: absolute;
+      right: -100px;
+      bottom: -100px;
+      width: 600px;
+      height: 600px;
+      background: url('img/MAILIFE.png') no-repeat center center;
+      background-size: contain;
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Profile Info Clarity */
+    .about-info p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+      color: #4e4e4e;
+    }
+
+    .about-info .title-s {
+      font-weight: 700;
+      color: #005248;
+      display: inline-block;
+      min-width: 100px;
+    }
+
+    .about-data {
+      color: #333;
+      font-weight: 500;
+    }
+
+    /* Bilingual Toggle */
+    .lang-switch {
+      position: fixed;
+      top: 80px;
+      right: 20px;
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 5px;
+      border-radius: 30px;
+      display: flex;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-lang {
+      border: none;
+      background: none;
+      color: #fff;
+      padding: 5px 15px;
+      cursor: pointer;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 11px;
+      transition: 0.3s;
+      text-transform: uppercase;
+    }
+
+    .btn-lang.active {
+      background: #007bff;
+      color: #fff;
+    }
+
+    /* Language visibility */
+    .lang-id {
+      display: none;
+    }
+
+    body.lang-id-active .lang-id {
+      display: block;
+    }
+
+    body.lang-id-active .lang-en {
+      display: none;
+    }
+
+    /* Company Logos */
+    .service-ico {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .logo-container {
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 10px #cde1f8;
+      overflow: hidden;
+      transition: 0.3s;
+      margin: 0 auto;
+    }
+
+    .service-box:hover .logo-container {
+      box-shadow: 0 0 0 10px #bbf5df;
+      transform: scale(1.05);
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+    }
+
+    .logo-container img.logo-full {
+      object-fit: cover;
+      padding: 0;
+    }
+
+    .logo-dummy {
+      width: 100%;
+      height: 100%;
+      background: #005248;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 42px;
+      text-transform: uppercase;
+    }
+
+    /* Skills Grouping */
+    .skill-group {
+      margin-bottom: 20px;
+    }
+
+    .skill-group h6 {
+      font-weight: bold;
+      color: #007bff;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      background: #f1f1f1;
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 13px;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+
+    /* Performance & Density UI */
+    .service-box {
+      padding: 2rem 1.5rem !important;
+      height: auto !important;
+      min-height: 480px;
+      transition: 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .s-description {
+      font-size: 0.85rem;
+      text-align: justify !important;
+      line-height: 1.6;
+    }
+
+    .improvement-box {
+      background: #f0f7ff;
+      border-left: 4px solid #007bff;
+      padding: 12px;
+      margin-top: 15px;
+      font-size: 0.8rem;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .improvement-title {
+      font-weight: bold;
+      color: #007bff;
+      display: block;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+    }
+
+    /* Portfolio Simplification */
+    .work-box {
+      margin-bottom: 30px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .work-img img {
+      transition: 0.5s;
+    }
+
+    .work-box:hover .work-img img {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .lang-switch {
+        top: 70px;
+        right: 10px;
+      }
+
+      .service-box {
+        min-height: auto;
+      }
+    }
+  </style>
 </head>
 
 <body id="page-top">
 
+  <div class="lang-switch">
+    <button onclick="setLanguage('en')" id="btn-en" class="btn-lang active">EN</button>
+    <button onclick="setLanguage('id')" id="btn-id" class="btn-lang">ID</button>
+  </div>
+
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">
+        <img src="img/MAILIFE.png" alt="MAILIFE Logo">
+        <span>MAILIFE</span>
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#home">Home</a>
+            <a class="nav-link js-scroll active" href="#home">
+              <span class="lang-en">Home</span>
+              <span class="lang-id">Beranda</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">About</a>
+            <a class="nav-link js-scroll" href="#about">
+              <span class="lang-en">About</span>
+              <span class="lang-id">Tentang</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#experience">Experience</a>
+            <a class="nav-link js-scroll" href="#experience">
+              <span class="lang-en">Experience</span>
+              <span class="lang-id">Pengalaman</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#portofolio">Portofolio</a>
+            <a class="nav-link js-scroll" href="#skills">
+              <span class="lang-en">Skills</span>
+              <span class="lang-id">Keahlian</span>
+            </a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll" href="#gallery">Gallery</a>
-          </li> -->
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contact</a>
+            <a class="nav-link js-scroll" href="#portofolio">
+              <span class="lang-en">Portfolio</span>
+              <span class="lang-id">Portofolio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">
+              <span class="lang-en">Contact</span>
+              <span class="lang-id">Kontak</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -57,15 +392,20 @@
   <!--/ Nav End /-->
 
   <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
-    <div class="overlay-itro"></div>
+  <div id="home" class="intro route bg-image" style="background: linear-gradient(135deg, #005248 0%, #002a25 100%);">
+    <div class="intro-watermark"></div>
+    <div class="overlay-itro" style="background-color: rgba(0, 0, 0, 0.3);"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-1"><br/><br/>Muhammad Affan Iskandarsyah</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Web Developer,IT Support,Graphic Designer</span><strong class="text-slider"></strong></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          <h1 class="intro-title mb-1">Muhammad <span class="name-highlight">Affan</span> Iskandarsyah</h1>
+          <p class="intro-subtitle">
+            <span class="text-slider-items">Fullstack Engineer,System Analyst,Tech Lead</span>
+            <strong class="text-slider"></strong>
+          </p>
+          <div class="intro-contact">
+            <span>affan.iskandarsyah@gmail.com</span> | <span>0822-9905-8351</span> | <span>mailife.github.io</span>
+          </div>
         </div>
       </div>
     </div>
@@ -78,273 +418,85 @@
         <div class="col-sm-12">
           <div class="box-shadow-full">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-5">
                 <div class="row">
                   <div class="col-sm-6 col-md-5">
                     <div class="about-img">
-                      <img src="img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      <img src="img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="Affan Iskandarsyah">
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-7">
                     <div class="about-info">
-                      <p><span class="title-s">Name: </span> <span>Muhammad Affan Iskandarsyah</span></p>
-                      <p style="text-align:justify;"><span class="title-s">Address: </span> <span>Villa Mutiara Cikarang Blok H9 No. 58 RT.025/RW.011, Kec. Cikarang Selatan Kab. Bekasi</span></p>
-                      <p><span class="title-s">Marital Status: </span> <span>Single</span></p>
-                      <p><span class="title-s">Date of Birth: </span> <span>April 4<sup>th</sup> 1999</span></p>
-                      <p><span class="title-s">Age:</span> <span>
-                        <script>  
-                          var dob = new Date("04/04/1999");  
-                          //calculate month difference from current date in time  
-                          var month_diff = Date.now() - dob.getTime();  
-                            
-                          //convert the calculated difference in date format  
-                          var age_dt = new Date(month_diff);   
-                            
-                          //extract year from date      
-                          var year = age_dt.getUTCFullYear();  
-                            
-                          //now calculate the age of the user  
-                          var age = Math.abs(year - 1970);  
-                            
-                          //display the calculated age  
-                          document.write(age);  
-                      </script>  
-                      </span></p>
-                      <p><span class="title-s">Place of Birth: </span> <span>Bekasi</span></p>
-                      <p><span class="title-s">Religion: </span> <span>Islam</span></p>
-                      <p><span class="title-s">Citizenship: </span> <span>Indonesia</span></p>
+                      <p>
+                        <span class="title-s">
+                          <span class="lang-en">Profile:</span>
+                          <span class="lang-id">Profil:</span>
+                        </span>
+                        <span class="about-data lang-en">Fullstack Engineer</span>
+                        <span class="about-data lang-id">Fullstack Engineer</span>
+                      </p>
+                      <p>
+                        <span class="title-s">
+                          <span class="lang-en">Email:</span>
+                          <span class="lang-id">Email:</span>
+                        </span>
+                        <span class="about-data" style="font-size: 0.9rem;">affan.iskandarsyah@gmail.com</span>
+                      </p>
+                      <p>
+                        <span class="title-s">
+                          <span class="lang-en">Phone:</span>
+                          <span class="lang-id">Telepon:</span>
+                        </span>
+                        <span class="about-data">0822-9905-8351</span>
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>HTML</span> <span class="pull-right">95%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-                      aria-valuemax="100"></div>
+                <div class="skill-mf mt-4">
+                  <div class="title-box-2">
+                    <h5 class="title-left lang-en">Education</h5>
+                    <h5 class="title-left lang-id">Pendidikan</h5>
                   </div>
-                  <span>CSS</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
+                  <div class="edu-item mb-3">
+                    <p class="mb-0"><strong>S1 Informatika</strong></p>
+                    <p class="mb-0" style="font-size: 0.85rem;">Institut Teknologi dan Bisnis Swadharma (2022)</p>
                   </div>
-                  <span>PHP</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
+
+                  <div class="title-box-2 mt-4">
+                    <h5 class="title-left lang-en">Certifications</h5>
+                    <h5 class="title-left lang-id">Sertifikasi</h5>
                   </div>
-                  <span>Laravel</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>CodeIgniter</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Python</span> <span class="pull-right">60%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>VueJS</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>NodeJS</span> <span class="pull-right">55%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>React</span> <span class="pull-right">55%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>JavaScript</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Golang</span> <span class="pull-right">50%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>MYSQL</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>SQL Server</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Adobe Illustrator</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Adobe XD</span> <span class="pull-right">70%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Adobe Photoshop</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Corel Draw X7</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>MikroTik</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
+                  <ul class="list-unstyled" style="font-size: 0.8rem; line-height: 1.8;">
+                    <li><i class="fa fa-check-circle text-primary"></i> Network Security on Alibaba Cloud</li>
+                    <li><i class="fa fa-check-circle text-primary"></i> Best Practices for Security on the Cloud</li>
+                    <li><i class="fa fa-check-circle text-primary"></i> Account Security on Alibaba Cloud</li>
+                    <li><i class="fa fa-check-circle text-primary"></i> Fullstack Development on Shiftacademy</li>
+                    <li><i class="fa fa-check-circle text-primary"></i> The Business Intelligence Analyst Course</li>
+                  </ul>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-7">
                 <div class="about-me pt-4 pt-md-0">
                   <div class="title-box-2">
-                    <h5 class="title-left">
-                      About me
-                    </h5>
+                    <h5 class="title-left lang-en">Professional Summary</h5>
+                    <h5 class="title-left lang-id">Ringkasan Profesional</h5>
                   </div>
-                  <p class="lead" style="text-align:justify;">
-                    I have a passion in IT, have experience as IT Support & Programmer. Have skills in the field of Web Development, Hardware and Network. 
-                    Likes challenges, persistent, likes to learn new things and implement useful things
-                  </p>
-                </div>
-                <div class="education pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Education
-                      </h5>
-                    </div>
-                        <div class="kuliah" style="text-align: left;">
-                            <li class="lead">
-                                INSTITUT TEKNOLOGI DAN BISNIS SWADHARMA
-                            </li>
-                            <p class="lead">
-                                2019 - 2022<br/>
-                                Informatics Engineering<br/>
-                                Grade 3.56
-                            </p>
-                            <li class="lead">
-                                SMK NEGERI 1 CIKARANG SELATAN
-                            </li>
-                            <p class="lead">
-                                2015 - 2017<br/>
-                                Computer and Network Engineering<br/>
-                                Grade 88.04
-                            </p>
-                        </div>
-                </div>
-                <div class="achievement pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Achievement
-                      </h5>
-                    </div>
-                    <div class="kuliah" style="text-align: left;">
-                        <li class="lead">
-                            1<sup>st</sup> Entrepreneur Competition
-                        </li>
-                        <p class="lead">
-                            2021<br/>
-                            Yarsi University
-                        </p>
-                        <li class="lead">
-                            Semifinalist Hackathon Web Application
-                        </li>
-                        <p class="lead">
-                            2021<br/>
-                            DISPOTMAR TNI AL
-                        </p>
-                        <li class="lead">
-                            2<sup>nd</sup> Martial Competition
-                        </li>
-                        <p class="lead">
-                            2016<br/>
-                            Bandung Karate Club
-                        </p>
-                    </div>
-                </div>
-                <div class="certificate pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Certificate
-                      </h5>
-                    </div>
-                    <div class="kuliah" style="text-align: right;">
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            Junior Web Developer from BNSP - 2022 until 2024
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            MikroTik Certified Network Associate - 2021 until 2024
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            1<sup>st</sup> Entrepreneur Competition from Yarsi University - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            Semifinalist Hackathon Web App from DISPOTMAR TNI AL - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            2<sup>nd</sup> Martial Competition from Bandung Karate Club - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            Web Development Course from Progate - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                           PHP Course from Progate - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            HTML Course from Progate - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                           CSS Course from Progate - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            SQL Course from Progate - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            Python Course from Progate - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            NodeJS Course from Progate - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            React Course from Progate - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            Data Science National Tournament from Data Academy - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                           Workshop Golang from Altera Academy - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            Webinar Cyber Security & Digital Forensic Center from UMM - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            Webinar IT Security Fundamental from UNUSIA - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            Webinar Wreck IT from Politeknik Siber & Sandi Negara - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            Participant Capture The Flag Competition from Bina Nusantara University - 2021
-                         </li>
-                         <li class="lead" style="text-align: left; font-size:medium;">
-                            Foxtalks : Inovasi Teknologi di Era New Normal from HACKTIV8 - 2020
-                         </li>
-                    </div>
+                  <div class="lang-en">
+                    <p class="lead" style="font-size: 1.1rem; text-align: justify;">
+                      Hello, I'm <span class="name-highlight">Affan</span>. A Fullstack Engineer with 4+ years of
+                      experience in building and maintaining web-based systems. Skilled in backend, frontend, database,
+                      and infrastructure with strong focus on performance, reliability, and system design. Experienced
+                      in system analysis and supporting technical team coordination.
+                    </p>
+                  </div>
+                  <div class="lang-id">
+                    <p class="lead" style="font-size: 1.1rem; text-align: justify;">
+                      Halo, saya <span class="name-highlight">Affan</span>. Fullstack Engineer dengan pengalaman lebih
+                      dari 4 tahun dalam membangun dan memelihara sistem berbasis web. Memiliki keahlian pada backend,
+                      frontend, database, serta infrastruktur dengan fokus kuat pada performa, keandalan, dan
+                      perancangan sistem. Berpengalaman dalam analisis sistem serta mendukung koordinasi tim teknis.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -354,165 +506,288 @@
     </div>
   </section>
 
-  <!--/ Section Services Star /-->
+  <!--/ Section Experience Star /-->
   <section id="experience" class="services-mf route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="title-box text-center">
-            <h3 class="title-a">
-              Work Experience
-            </h3>
-            <p class="subtitle-a">
-              This is my journey to the success
-            </p>
+            <h3 class="title-a lang-en">Work Experience</h3>
+            <h3 class="title-a lang-id">Pengalaman Kerja</h3>
             <div class="line-mf"></div>
           </div>
         </div>
       </div>
-      <div id="CarouselControl" class="row carousel slide" data-ride="carousel" style="margin: auto;">
-        <div class="carousel-inner" style="width: 100%;">
-          <div class="carousel-item active" style="text-align: center;" data-interval="3000">
-          <div class="col-md-4" style=" display: inline-block;">
-              <div class="service-box" style="height: 500px;">
-                  <div class="service-ico">
-                      <img src="img/logo/logo eska.png" style="display:block; margin:auto;">
-                    </div>
-                  <div class="service-content">
-                    <h2 class="s-title">PT ESKALINK</h2>
-                    <h5 style="text-align:center;">Fulltime Web Developer</h5>
-                    <p style="text-align:center;"><small>December 2021 until Now</small></p>
-                    <p class="s-description text-center">
-                      Developer of Sales Force Automation (SFA) and Attendance Management System Using Laravel, Vue JS, Database MySQL and SQL Server
-                    </p>
-                  </div>
+      <div class="row">
+        <!-- RUMAT -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <div class="logo-container">
+                <img src="img/logo/logorumat.jpeg" alt="RUMAT" class="logo-full">
               </div>
-          </div>
-          </div>
-          <div class="carousel-item" style="text-align:center;" data-interval="3000">
-            <div class="col-md-4" style="display: inline-block;">
-              <div class="service-box" style="height: 500px;">
+            </div>
+            <div class="service-content">
+              <h2 class="s-title" style="font-size: 1.1rem;">PT Rumah Perawatan Indonesia (RUMAT)</h2>
+              <p class="text-center mb-1"><strong>Fullstack Developer</strong></p>
+              <p class="text-center"><small class="lang-en">May 2024 – Present</small><small class="lang-id">Mei 2024 –
+                  Sekarang</small></p>
+
+              <div class="lang-en s-description">
+                <ul class="pl-3 mb-0">
+                  <li>Developed and maintained healthcare systems for operational workflows</li>
+                  <li>Contributed to system design and feature development (R&D)</li>
+                  <li>Coordinated technical implementation within IT team</li>
+                  <li>Managed deployment, server configuration, and Linux infrastructure</li>
+                  <li>Optimized backend performance and database queries</li>
+                </ul>
+                <div class="improvement-box">
+                  <span class="improvement-title">Key Improvement:</span>
+                  Led development for 132 units nationwide. Reduced data retrieval from hours to <1s, improved validity
+                    (40% to 90%), and eliminated fraud by up to 100% via automation, EWS, and CCTV integration. </div>
+                </div>
+
+                <div class="lang-id s-description">
+                  <ul class="pl-3 mb-0">
+                    <li>Mengembangkan dan memelihara sistem layanan kesehatan operasional</li>
+                    <li>Berkontribusi dalam perancangan sistem dan pengembangan fitur (R&D)</li>
+                    <li>Mengkoordinasikan implementasi teknis dalam tim IT</li>
+                    <li>Mengelola deployment, konfigurasi server, dan infrastruktur Linux</li>
+                    <li>Optimasi performa backend dan query database</li>
+                  </ul>
+                  <div class="improvement-box">
+                    <span class="improvement-title">Pencapaian Utama:</span>
+                    Memimpin dev di 132 unit nasional. Menurunkan waktu tarik data (jam ke <1 detik), meningkatkan
+                      validitas (40% ke 90%), dan menghapus fraud hingga 100% melalui otomatisasi, EWS, dan integrasi
+                      CCTV. </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Eskalink -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="service-box">
                 <div class="service-ico">
-                  <img src="img/logo/logobk.png" style="display:block; margin:auto;">
+                  <div class="logo-container">
+                    <img src="img/logo/logo_eska.png" alt="Eskalink">
+                  </div>
                 </div>
                 <div class="service-content">
-                  <h2 class="s-title">SMKS Bina Karya</h2>
-                  <h5 style="text-align:center;">Fulltime IT Support</h5>
-                  <p style="text-align:center;"><small>January 2019 until November 2021</small></p>
-                  <p class="s-description text-center">
-                    <li>Installation & Maintenance Hardware,<br/> Software & Network</li>
-                    <li>Configure LAN and WLAN</li>
-                    <li>Graphic Design</li>
-                    <li>CBT Application Tester</li>
-                  </p>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="carousel-item" style="text-align:center;" data-interval="3000">
-              <div class="col-md-4" style="display: inline-block;">
-                <div class="service-box" style="height: 500px;">
-                  <div class="service-ico">
-                    <img src="img/logo/drago-logo-black.svg" style="display:block; margin:auto;">
-                  </div>
-                  <div class="service-content">
-                    <h2 class="s-title">PT Drago Kreatifindo Digital</h2>
-                      <h5 style="text-align:center;">Freelance Programmer</h5>
-                      <p style="text-align:center;"><small>September 2020 until May 2021</small></p>
-                      <p class="s-description text-center">
-                        Develop System using Laravel, Bootstrap and Database MySQL
-                        <br/>
-                        List of developed systems :
-                        <li>Employee Cooperative Financial System</li>
-                        <li>Health Administration System</li>
-                        <li>Event Management System</li>
-                        <li>Food Ordering System</li>
-                      </p>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" style="text-align:center;" data-interval="3000">
-              <div class="col-md-4" style="display: inline-block;">
-                 <div class="service-box" style="height: 500px;">
-                   <div class="service-ico">
-                     <span class="ico-circle"><i class="ion-monitor"></i></span>
-                   </div>
-                   <div class="service-content">
-                     <h2 class="s-title">DNC Convection</h2>
-                     <h5 style="text-align:center;">Freelance Programmer</h5>
-                     <p style="text-align:center;"><small>December 2019 until May 2020</small></p>
-                     <p class="s-description text-center">
-                       Create & Maintenance a Dynamic Company Profile Website using Bootstrap, CodeIgniter and Database MySQL
-                     </p>
-                   </div>
-                 </div>
-               </div>
-             </div>
-          </div>
-          <a class="carousel-control-prev" href="#CarouselControl" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#CarouselControl" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-    </div>
-  </section>
-  <!--/ Section Services End /-->
+                  <h2 class="s-title" style="font-size: 1.1rem;">PT Eskalink</h2>
+                  <p class="text-center mb-1"><strong>Web Developer</strong></p>
+                  <p class="text-center"><small>Dec 2021 – May 2024</small></p>
 
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-    <div class="overlay-mf"></div>
+                  <div class="lang-en s-description">
+                    <ul class="pl-3 mb-0">
+                      <li>Developed enterprise web applications (PHP)</li>
+                      <li>Built reporting and master data modules</li>
+                      <li>Translated business requirements to tech solutions</li>
+                      <li>Improved system performance and bug fixing</li>
+                    </ul>
+                    <div class="improvement-box">
+                      <span class="improvement-title">Key Improvement:</span>
+                      Delivered solutions for 10 enterprise clients. Enabled real-time dashboards and reduced invalid
+                      uploads to 0%. 1st place in innovation competition.
+                    </div>
+                  </div>
+
+                  <div class="lang-id s-description">
+                    <ul class="pl-3 mb-0">
+                      <li>Mengembangkan aplikasi web enterprise (PHP)</li>
+                      <li>Membangun modul reporting dan master data</li>
+                      <li>Menerjemahkan kebutuhan bisnis ke solusi teknis</li>
+                      <li>Optimasi performa sistem dan perbaikan bug</li>
+                    </ul>
+                    <div class="improvement-box">
+                      <span class="improvement-title">Pencapaian Utama:</span>
+                      Solusi untuk 10 klien enterprise. Membangun dashboard real-time dan menurunkan data tidak valid ke
+                      0%. Juara 1 kompetisi inovasi.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Drago -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <div class="logo-container">
+                    <img src="img/logo/drago-logo-black.svg" alt="Drago">
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title" style="font-size: 1.1rem;">PT Drago Kreatifindo Digital</h2>
+                  <p class="text-center mb-1"><strong>Programmer</strong></p>
+                  <p class="text-center"><small>Sep 2020 – May 2021</small></p>
+
+                  <div class="lang-en s-description">
+                    <ul class="pl-3 mb-0">
+                      <li>Developed internal business applications</li>
+                      <li>Managed master data features</li>
+                      <li>Performed testing and QA/QC</li>
+                    </ul>
+                    <div class="improvement-box">
+                      <span class="improvement-title">Key Improvement:</span>
+                      Developed systems for 3 regional clients. Built ticketing platform replacing manual workflows,
+                      achieving 100% data centralization.
+                    </div>
+                  </div>
+
+                  <div class="lang-id s-description">
+                    <ul class="pl-3 mb-0">
+                      <li>Mengembangkan aplikasi internal perusahaan</li>
+                      <li>Mengelola fitur master data</li>
+                      <li>Melakukan pengujian serta QA/QC</li>
+                    </ul>
+                    <div class="improvement-box">
+                      <span class="improvement-title">Pencapaian Utama:</span>
+                      Sistem untuk 3 klien regional. Membangun platform ticketing pengganti proses manual, mencapai
+                      sentralisasi data 100%.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bina Karya -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <div class="logo-container">
+                    <img src="img/logo/logobk.png" alt="Bina Karya">
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title" style="font-size: 1.1rem;">SMKS Bina Karya</h2>
+                  <p class="text-center mb-1"><strong>IT Support</strong></p>
+                  <p class="text-center"><small>Jan 2019 – Nov 2021</small></p>
+
+                  <div class="lang-en s-description">
+                    <ul class="pl-3 mb-0">
+                      <li>Maintained network & IT infrastructure</li>
+                      <li>Provided troubleshooting and technical support</li>
+                    </ul>
+                    <div class="improvement-box">
+                      <span class="improvement-title">Key Improvement:</span>
+                      Digitized exams into CBT (100% adoption), implemented endpoint security (0% violations), and
+                      achieved full device compliance.
+                    </div>
+                  </div>
+
+                  <div class="lang-id s-description">
+                    <ul class="pl-3 mb-0">
+                      <li>Memelihara jaringan & infrastruktur IT</li>
+                      <li>Troubleshooting dan dukungan teknis</li>
+                    </ul>
+                    <div class="improvement-box">
+                      <span class="improvement-title">Pencapaian Utama:</span>
+                      Digitalisasi ujian ke CBT (adopsi 100%), keamanan endpoint (pelanggaran 0%), dan kepatuhan
+                      perangkat penuh.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!--/ Section Skills Star /-->
+  <section id="skills" class="portfolio-mf sect-pt4 route">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">21</p>
-              <span class="counter-text">CERTIFICATE</span>
-            </div>
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a lang-en">Technical Skills</h3>
+            <h3 class="title-a lang-id">Keahlian Teknis</h3>
+            <div class="line-mf"></div>
           </div>
         </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="skill-group">
+                  <h6>Backend</h6>
+                  <div class="skill-tags">
+                    <span class="skill-tag">PHP (Laravel, CodeIgniter)</span>
+                    <span class="skill-tag">Golang</span>
+                    <span class="skill-tag">Python</span>
+                  </div>
+                </div>
+                <div class="skill-group">
+                  <h6>Frontend</h6>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                  </div>
+                </div>
+                <div class="skill-group">
+                  <h6>Database</h6>
+                  <div class="skill-tags">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">PostgreSQL (Intermediate)</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">MongoDB (Basic)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-group">
+                  <h6>DevOps & Infrastructure</h6>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Linux Server</span>
+                    <span class="skill-tag">Cloud Deployment</span>
+                    <span class="skill-tag">Server Configuration</span>
+                  </div>
+                </div>
+                <div class="skill-group">
+                  <h6>AI & Productivity</h6>
+                  <div class="skill-tags">
+                    <span class="skill-tag">ChatGPT</span>
+                    <span class="skill-tag">Gemini CLI</span>
+                    <span class="skill-tag">Claude</span>
+                    <span class="skill-tag">Prompt Engineering</span>
+                  </div>
+                </div>
+                <div class="skill-group">
+                  <h6>Tools</h6>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Visio</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="counter-num">
-              <p class="counter">4</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">11</p>
-              <span class="counter-text">PROJECT OF EXPERIENCE</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">3</p>
-              <span class="counter-text">ACHIEVEMENT</span>
+
+            <div class="row mt-4">
+              <div class="col-sm-12">
+                <div class="title-box-2">
+                  <h5 class="title-left lang-en">Core Skills</h5>
+                  <h5 class="title-left lang-id">Keahlian Inti</h5>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">System Design</span>
+                  <span class="skill-tag">Fullstack Development</span>
+                  <span class="skill-tag">Performance Optimization</span>
+                  <span class="skill-tag">Process Automation</span>
+                  <span class="skill-tag">Problem Solving</span>
+                  <span class="skill-tag">Technical Leadership</span>
+                  <span class="skill-tag">System Integration</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!--/ Section Portfolio Star /-->
   <section id="portofolio" class="portfolio-mf sect-pt4 route">
@@ -520,433 +795,141 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="title-box text-center">
-            <h3 class="title-a">
-              Portfolio
-            </h3>
-            <p class="subtitle-a">
-              This is my Portofolio Web Project
-            </p>
+            <h3 class="title-a">Portfolio</h3>
+            <p class="subtitle-a lang-en">Highlighted Web Projects</p>
+            <p class="subtitle-a lang-id">Proyek Web Unggulan</p>
             <div class="line-mf"></div>
           </div>
         </div>
       </div>
       <div class="row">
+        <!-- ROSY (RUMAT) -->
         <div class="col-md-4">
           <div class="work-box">
-            <a href="" data-toggle="modal" data-target=".bd-example-modal-md" class="work-img"><img src="img/portof/PORTOF_ESKA_NEWSFA_2.png" height="200%" width="100%"/></a>
-              <div class="modal fade bd-example-modal-md work-box2" tabindex="-1" role="dialog" aria-labelledby="myMediumModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Portfolio New SFA</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="work-img2">
-                        <p>Report Agenda Menu</p><img src="img/portof/PORTOF_ESKA_NEWSFA_3.png" alt="" class="img-fluid"><br/>
-                        <p>Report Visit Note Menu</p><img src="img/portof/PORTOF_ESKA_NEWSFA_4.png" alt="" class="img-fluid"><br/>
-                        <p>Report Analisa Kunjungan Menu</p><img src="img/portof/PORTOF_ESKA_NEWSFA_5.png" alt="" class="img-fluid">
-                        <br/>
-                        <span> Client :</span>
-                        <li style="text-size-adjust: 3px;">PT Kino Indonesia Tbk</li>
-                        <li style="text-size-adjust: 3px;">PT Rajawali Nusindo Tbk</li><br/>
-                        <span>Development using:</span>
-                        <li style="text-size-adjust: 3px;">PHP 7.4</li>
-                        <li style="text-size-adjust: 3px;">Laravel 6</li>
-                        <li style="text-size-adjust: 3px;">Database SQL Server</li>
-                        <li style="text-size-adjust: 3px;">VueJS 2</li>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="work-img">
+              <img src="img/portof/ROSY.png" alt="ROSY ERP" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <h2 class="w-title">ROSY (ERP System)</h2>
+              <div class="w-more">
+                <span class="w-ctegory">RUMAT</span> / <span class="w-date">
+                  <span class="lang-en">Enterprise Resource Planning</span>
+                  <span class="lang-id">Sistem ERP Terintegrasi</span>
+                </span>
               </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">New Sales Force Automation (SFA)</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">PT ESKALINK</span> / <span class="w-ctegory">Web Developer</span> / <span class="w-date"><br/>31 03. 2022</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+              <p class="small text-muted mt-2 mb-0">
+                <span class="lang-en">Centralized ERP for healthcare operational workflows.</span>
+                <span class="lang-id">Sistem ERP terpusat untuk alur operasional layanan kesehatan.</span>
+              </p>
+            </div>
           </div>
         </div>
+
+        <!-- RUMATKU (RUMAT) -->
         <div class="col-md-4">
           <div class="work-box">
-            <a href="" data-toggle="modal" data-target=".bd-example-modal-md2" class="work-img"><img src="img/portof/PORTOF_ESKA_SFA_2.png" height="200%" width="100%"/></a>
-              <div class="modal fade bd-example-modal-md2 work-box2" tabindex="-1" role="dialog" aria-labelledby="myMediumModalLabel2" aria-hidden="true">
-                <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel2">Portfolio SFA</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="work-img2">
-                        <p>Sidebar Menu</p><img src="img/portof/PORTOF_ESKA_SFA_3.png" alt="" class="img-fluid"><br/>
-                        <p>Upload Target Menu</p><img src="img/portof/PORTOF_ESKA_SFA_4.png" alt="" class="img-fluid"><br/>
-                        <br/>
-                        <span> Client :</span>
-                        <li style="text-size-adjust: 3px;">PT Sinar Sosro Tbk</li>
-                        <li style="text-size-adjust: 3px;">PT Focus Distribusi Nusantara Tbk</li>
-                        <li style="text-size-adjust: 3px;">PT Univenus Tbk</li>
-                        <li style="text-size-adjust: 3px;">PT Tigaraksa Satria Tbk</li>
-                        <li style="text-size-adjust: 3px;">PT ASPP Tbk</li><br/>
-                        <span>Development using:</span>
-                        <li style="text-size-adjust: 3px;">PHP 5.6 & 7.2</li>
-                        <li style="text-size-adjust: 3px;">Database MySQL & SQL Server</li>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="work-img">
+              <img src="img/portof/RUMATKU.png" alt="RUMATKU Attendance" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <h2 class="w-title">RUMATKU (Attendance)</h2>
+              <div class="w-more">
+                <span class="w-ctegory">RUMAT</span> / <span class="w-date">
+                  <span class="lang-en">Attendance Management</span>
+                  <span class="lang-id">Manajemen Absensi</span>
+                </span>
               </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Sales Force Automation (SFA)</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">PT ESKALINK</span> / <span class="w-ctegory">Web Developer</span> / <span class="w-date"><br/>31 03. 2022</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+              <p class="small text-muted mt-2 mb-0">
+                <span class="lang-en">Staff attendance and productivity tracking system.</span>
+                <span class="lang-id">Sistem pencatatan absensi dan monitoring produktivitas staf.</span>
+              </p>
+            </div>
           </div>
         </div>
+
+        <!-- RUMATKITA (RUMAT) -->
         <div class="col-md-4">
           <div class="work-box">
-            <a href="" data-toggle="modal" data-target=".bd-example-modal-md3" class="work-img"><img src="img/portof/PORTOF_ESKA_AMS_1.png" height="200%" width="100%"/></a>
-              <div class="modal fade bd-example-modal-md3 work-box2" tabindex="-1" role="dialog" aria-labelledby="myMediumModalLabel3" aria-hidden="true">
-                <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel3">Portfolio AMS</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="work-img2">
-                        <p>Dashboard Menu</p><img src="img/portof/PORTOF_ESKA_AMS_1.png" alt="" class="img-fluid">
-                        <!-- <img src="img/portof/PORTOF_ESKA_AMS_2.png" alt="" class="img-fluid"><p>Dashboard Menu</p> -->
-                        <br/>
-                        <span> Client :</span>
-                        <li style="text-size-adjust: 3px;">PT Garudafood Putra Putri Jaya Tbk</li><br/>
-                        <span>Development using:</span>
-                        <li style="text-size-adjust: 3px;">PHP 7.2</li>
-                        <li style="text-size-adjust: 3px;">Database SQL Server</li>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="work-img">
+              <img src="img/portof/RUMATKITA.png" alt="RUMATKITA Patient App" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <h2 class="w-title">RUMATKITA (Patient App)</h2>
+              <div class="w-more">
+                <span class="w-ctegory">RUMAT</span> / <span class="w-date">
+                  <span class="lang-en">Patient Portal & Booking</span>
+                  <span class="lang-id">Portal Pasien & Booking</span>
+                </span>
               </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Attendance Management System (AMS)</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">PT ESKALINK</span> / <span class="w-ctegory">Web Developer</span> / <span class="w-date"><br/>02 04. 2022</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+              <p class="small text-muted mt-2 mb-0">
+                <span class="lang-en">Homecare booking, diabetes education, and treatment history.</span>
+                <span class="lang-id">Booking homecare/unit, edukasi diabetes, dan riwayat perawatan.</span>
+              </p>
+            </div>
           </div>
         </div>
+
+        <!-- ROCKET (RUMAT) -->
         <div class="col-md-4">
           <div class="work-box">
-            <a href="" data-toggle="modal" data-target=".bd-example-modal-md5" class="work-img"><img src="img/portof/PORTOF_ESKA_EMS_1.png" height="200%" width="100%"/></a>
-              <div class="modal fade bd-example-modal-md5 work-box2" tabindex="-1" role="dialog" aria-labelledby="myMediumModalLabel5" aria-hidden="true">
-                <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel5">Portfolio EMS</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="work-img2">
-                        <p>Login Menu</p><img src="img/portof/PORTOF_ESKA_EMS_1.png" alt="" class="img-fluid"><br/>
-                        <p>Event Menu</p><img src="img/portof/PORTOF_ESKA_EMS_2.png" alt="" class="img-fluid"><br/>
-                        <p>Q&A Event Menu</p><img src="img/portof/PORTOF_ESKA_EMS_3.png" alt="" class="img-fluid"><br/>
-                        <!-- <img src="img/portof/PORTOF_ESKA_AMS_2.png" alt="" class="img-fluid"><p>Dashboard Menu</p> -->
-                        <span> Client :</span>
-                        <li style="text-size-adjust: 3px;">PT Garudafood Putra Putri Jaya</li><br/>
-                        <span>Development using:</span>
-                        <li style="text-size-adjust: 3px;">Laravel 6</li>
-                        <li style="text-size-adjust: 3px;">Database SQL Server</li>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="work-img">
+              <img src="img/portof/ROCKET.png" alt="ROCKET Ticketing" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <h2 class="w-title">ROCKET (Ticketing)</h2>
+              <div class="w-more">
+                <span class="w-ctegory">RUMAT</span> / <span class="w-date">
+                  <span class="lang-en">Task Management</span>
+                  <span class="lang-id">Manajemen Tugas</span>
+                </span>
               </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Event Management System (EMS)</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">PT ESKALINK</span> / <span class="w-ctegory">Web Developer</span> / <span class="w-date"><br/>02 01. 2022</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+              <p class="small text-muted mt-2 mb-0">
+                <span class="lang-en">Ticket-based task management and issue tracking system.</span>
+                <span class="lang-id">Sistem manajemen pekerjaan dan tracking berbasis ticket.</span>
+              </p>
+            </div>
           </div>
         </div>
+
+        <!-- Existing Portfolio Items (Optional: Move or keep based on priority) -->
         <div class="col-md-4">
           <div class="work-box">
-            <a href="" data-toggle="modal" data-target=".bd-example-modal-md4" class="work-img"><img src="img/portof/PORTOF_DRAGO_COMPRO1.png" height="200%" width="100%"/></a>
-              <div class="modal fade bd-example-modal-md4 work-box2" tabindex="-1" role="dialog" aria-labelledby="myMediumModalLabel4" aria-hidden="true">
-                <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel4">Portfolio EMS</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="work-img2">
-                        <p>Landing Page</p><img src="img/portof/PORTOF_DRAGO_COMPRO1.png" alt="" class="img-fluid"><br/>
-                        <p>Login Menu</p><img src="img/portof/PORTOF_DRAGO_COMPRO2.png" alt="" class="img-fluid"><br/>  
-                        <p>Register Menu</p><img src="img/portof/PORTOF_DRAGO_COMPRO3.png" alt="" class="img-fluid"><br/>
-                        <!-- <img src="img/portof/PORTOF_ESKA_AMS_2.png" alt="" class="img-fluid"><p>Dashboard Menu</p> -->
-                        <br/>
-                        <span> Client :</span>
-                        <li style="text-size-adjust: 3px;">Sekolah Tinggi Pariwisata Bandung (NHI)</li><br/>
-                        <span>Development using:</span>
-                        <li style="text-size-adjust: 3px;">Laravel 7</li>
-                        <li style="text-size-adjust: 3px;">Database MySQL</li>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="work-img">
+              <img src="img/portof/PORTOF_ESKA_NEWSFA_2.png" alt="SFA" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <h2 class="w-title">Sales Force Automation (SFA)</h2>
+              <div class="w-more">
+                <span class="w-ctegory">PT ESKALINK</span> / <span class="w-date">Enterprise Solution</span>
               </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Event Management System (EMS)</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">PT DRAGO</span> / <span class="w-ctegory">Web Developer</span> / <span class="w-date"><br/>10 09. 2020</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
+        <!-- ... keeping some important ones or reducing to keep it clean ... -->
         <div class="col-md-4">
           <div class="work-box">
-            <a href="" data-toggle="modal" data-target=".bd-example-modal-md7" class="work-img"><img src="img/portof/PORTOF_DRAGO_FOOD1.png" height="200%" width="100%"/></a>
-              <div class="modal fade bd-example-modal-md7 work-box2" tabindex="-1" role="dialog" aria-labelledby="myMediumModalLabel7" aria-hidden="true">
-                <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel7">Portfolio FOS</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="work-img2">
-                        <p>Login Menu</p><img src="img/portof/PORTOF_DRAGO_FOOD1.png" alt="" class="img-fluid"><br/>
-                        <p>Penjualan Menu</p><img src="img/portof/PORTOF_DRAGO_FOOD2.png" alt="" class="img-fluid">
-                        <!-- <img src="img/portof/PORTOF_ESKA_AMS_2.png" alt="" class="img-fluid"><p>Dashboard Menu</p> -->
-                        <br/>
-                        <span> Client :</span>
-                        <li style="text-size-adjust: 3px;">SETUDIOHANA</li><br/>
-                        <span>Development using:</span>
-                        <li style="text-size-adjust: 3px;">Laravel 6</li>
-                        <li style="text-size-adjust: 3px;">Database MySQL</li>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="work-img">
+              <img src="img/portof/PORTOF_DRAGO_HEALTH1.png" alt="Health System" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <h2 class="w-title">Health Administration System</h2>
+              <div class="w-more">
+                <span class="w-ctegory">PT DRAGO</span> / <span class="w-date">Healthcare System</span>
               </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Food Ordering System (FOS)</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">PT DRAGO</span> / <span class="w-ctegory">Web Developer</span> / <span class="w-date"><br/>10 09. 2020</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="" data-toggle="modal" data-target=".bd-example-modal-md8" class="work-img"><img src="img/portof/PORTOF_DRAGO_HEALTH1.png" height="200%" width="100%"/></a>
-              <div class="modal fade bd-example-modal-md8 work-box2" tabindex="-1" role="dialog" aria-labelledby="myMediumModalLabel8" aria-hidden="true">
-                <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel8">Portfolio HAS</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="work-img2">
-                        <p>Login Menu</p><img src="img/portof/PORTOF_DRAGO_HEALTH1.png" alt="" class="img-fluid"><br/>
-                        <p>PCR Menu</p><img src="img/portof/PORTOF_DRAGO_HEALTH2.png" alt="" class="img-fluid">
-                        <!-- <img src="img/portof/PORTOF_ESKA_AMS_2.png" alt="" class="img-fluid"><p>Dashboard Menu</p> -->
-                        <br/>
-                        <span> Client :</span>
-                        <li style="text-size-adjust: 3px;">LIDER LAB</li><br/>
-                        <span>Development using:</span>
-                        <li style="text-size-adjust: 3px;">Laravel 7</li>
-                        <li style="text-size-adjust: 3px;">Database MySQL</li>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Health Administration System (HAS)</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">PT DRAGO</span> / <span class="w-ctegory">Web Developer</span> / <span class="w-date"><br/>10 09. 2020</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        
+      </div>
+      <div class="text-center mt-4">
+        <p class="small text-muted lang-en">* Detailed project documentation restricted for confidentiality.</p>
+        <p class="small text-muted lang-id">* Dokumentasi detail proyek dibatasi karena alasan kerahasiaan perusahaan.
+        </p>
       </div>
     </div>
   </section>
-  <!--/ Section Portfolio End /-->
 
-  <!--/ Section Blog Star /-->
-  <!-- <section id="gallery" class="blog-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              GALLERY
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Travel</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!--/ Section Blog End /-->
-
-  <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+  <!--/ Section Contact Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-pt4 route" style="background-image: url(img/overlay-bg.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
@@ -955,31 +938,38 @@
             <div id="contact" class="box-shadow-full">
               <div class="row">
                 <div class="col-md-6">
-                  <div class="title-box-2 pt-4 pt-md-0">
-                    <h5 class="title-left">
-                      Get in Touch
-                    </h5>
+                  <div class="title-box-2">
+                    <h5 class="title-left lang-en">Get in Touch</h5>
+                    <h5 class="title-left lang-id">Hubungi Saya</h5>
                   </div>
                   <div class="more-info">
-                    <p class="lead">
-                      If you want to know me, just contact me!
-                    </p>
+                    <p class="lead lang-en">Feel free to reach out for collaborations or inquiries.</p>
+                    <p class="lead lang-id">Jangan ragu untuk menghubungi saya untuk kolaborasi atau pertanyaan.</p>
                     <ul class="list-ico">
-                      <li><span class="ion-ios-telephone"></span> (+62) 822-9905-8351</li>
+                      <li><span class="ion-ios-telephone"></span> 0822-9905-8351</li>
                       <li><span class="ion-email"></span> affan.iskandarsyah@gmail.com</li>
                     </ul>
                   </div>
                   <div class="socials">
                     <ul>
-                      <li><a href="https://www.instagram.com/affanisk/" target="_blank"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                      <li><a href="https://wa.me/+6282299058351" target="_blank"><span class="ico-circle"><i class="ion-social-whatsapp"></i></span></a></li>
-                      <li><a href="https://www.linkedin.com/in/muhammadaffaniskandarsyah/" target="_blank"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
-                      <li><a href="https://github.com/affanisk99" target="_blank"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+                      <li><a href="https://linkedin.com/in/muhammadaffaniskandarsyah/" target="_blank"><span
+                            class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                      <li><a href="https://github.com/affanisk99" target="_blank"><span class="ico-circle"><i
+                              class="ion-social-github"></i></span></a></li>
+                      <li><a href="https://wa.me/+6282299058351" target="_blank"><span class="ico-circle"><i
+                              class="ion-social-whatsapp"></i></span></a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.419043091056!2d107.10551441413888!3d-6.339735263791525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699bbac251eec7%3A0xa33b11645fd76a93!2sPEMPEK%20RAMAKASIH!5e0!3m2!1sen!2sid!4v1647700672934!5m2!1sen!2sid" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left lang-en">Location</h5>
+                    <h5 class="title-left lang-id">Lokasi</h5>
+                  </div>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.419043091056!2d107.10551441413888!3d-6.339735263791525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699bbac251eec7%3A0xa33b11645fd76a93!2sPEMPEK%20RAMAKASIH!5e0!3m2!1sen!2sid!4v1647700672934!5m2!1sen!2sid"
+                    width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen=""
+                    loading="lazy"></iframe>
                 </div>
               </div>
             </div>
@@ -992,15 +982,15 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="copyright-box">
-              <p class="copyright">&copy; Copyright <strong>Mailifeweb</strong>. All Rights Reserved</p>            
-              <div class="credits"> Developed and Modified by <a href="https://github.com/affanisk99" target="_blank">Muhammad Affan Iskandarsyah</a></div>  
+              <p class="copyright">&copy; <span id="copyright-year"></span> Copyright <strong>Mailifeweb</strong>. All Rights Reserved</p>
+              <div class="credits">Developed by <a href="https://github.com/affanisk99" target="_blank">Muhammad Affan
+                  Iskandarsyah</a></div>
             </div>
           </div>
         </div>
       </div>
     </footer>
   </section>
-  <!--/ Section Contact-footer End /-->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
@@ -1016,14 +1006,36 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
-  <!-- MODAL PORTFOLIO -->
-  
+  <script>
+    function setLanguage(lang) {
+      if (lang === 'id') {
+        $('body').addClass('lang-id-active');
+        $('#btn-id').addClass('active');
+        $('#btn-en').removeClass('active');
+        localStorage.setItem('pref-lang', 'id');
+      } else {
+        $('body').removeClass('lang-id-active');
+        $('#btn-en').addClass('active');
+        $('#btn-id').removeClass('active');
+        localStorage.setItem('pref-lang', 'en');
+      }
+    }
+
+    $(document).ready(function () {
+      const savedLang = localStorage.getItem('pref-lang');
+      if (savedLang) {
+        setLanguage(savedLang);
+      } else {
+        setLanguage('en');
+      }
+      $('#copyright-year').text(new Date().getFullYear());
+    });
+  </script>
 
 </body>
+
 </html>
